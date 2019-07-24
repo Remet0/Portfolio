@@ -1,2 +1,13 @@
+@import 'abstracts/variables';
+//base items
+@import 'base/typography';
+
+// Layout
 @import 'layout/header';
 @import 'layout/body';
+@import 'layout/landing';
+@import 'layout/work';
+@import 'layout/contact';
+
+//components
+@import 'components/card';

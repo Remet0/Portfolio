@@ -1,0 +1,11 @@
+#portfolio{
+    .card--main{
+        background-color: $card-color;
+        width: 100;
+        display: flex;
+        p{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -1,4 +1,10 @@
+* {
+  color: #b895b8;
+  font-family: "Lato", sans-serif;
+}
+
 header {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,11 +51,41 @@ body {
 }
 
 .parallax {
+  margin: 0;
   background-image: url("../../../assets/images/Background.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#landing {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #314157;
+}
+
+#landing h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+#portfolio .card--main {
+  background-color: #314157;
+  width: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#portfolio .card--main p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
