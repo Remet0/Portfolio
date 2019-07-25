@@ -1,0 +1,18 @@
+.fadeIn{
+    -webkit-animation: animat_show 1s;
+    animation: animat_show 1s;
+    opacity: 1;
+}
+.fadeOut{
+    -webkit-animation: animat_hide 1s;
+    animation: animat_hide 1s;
+    opacity: 0;
+}
+@-webkit-keyframes animat_show{
+    0%{opacity: 0}
+    100%{opacity:1}
+}
+@-webkit-keyframes animat_hide{
+    0%{opacity: 1}
+    100%{opacity:0}
+}

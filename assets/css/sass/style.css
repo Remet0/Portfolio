@@ -3,6 +3,36 @@
   font-family: "Lato", sans-serif;
 }
 
+.fadeIn {
+  -webkit-animation: animat_show 1s;
+  animation: animat_show 1s;
+  opacity: 1;
+}
+
+.fadeOut {
+  -webkit-animation: animat_hide 1s;
+  animation: animat_hide 1s;
+  opacity: 0;
+}
+
+@-webkit-keyframes animat_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animat_hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 header {
   padding-top: 10px;
   display: -webkit-box;
@@ -87,6 +117,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   height: 500px;
 }
 
@@ -143,7 +177,7 @@ body {
   height: 300px;
   width: 30%;
   position: relative;
-  margin: 0 10% 0 10%;
+  margin: 10% 10% 0 10%;
 }
 
 .card--work img {
@@ -154,7 +188,7 @@ body {
 }
 
 .card--work .card--wrap {
-  height: 30px;
+  height: 50px;
   width: 90%;
   background-color: #314157;
   position: absolute;
@@ -164,6 +198,6 @@ body {
 
 .card--work .card--wrap p {
   text-align: center;
-  margin: 0 0 40% 0;
+  margin: 5% 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */
