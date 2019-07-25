@@ -83,6 +83,13 @@ body {
   width: 50%;
 }
 
+#work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+}
+
 .card--portfolio {
   background-color: #314157;
   -webkit-box-shadow: inset 0 0 10px #000000;
@@ -124,5 +131,39 @@ body {
 .card--portfolio .card--text p {
   margin: 0;
   padding-top: 10%;
+}
+
+.card--work {
+  background-color: #314157;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  width: 30%;
+  position: relative;
+  margin: 0 10% 0 10%;
+}
+
+.card--work img {
+  width: 80%;
+  height: 80%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.card--work .card--wrap {
+  height: 30px;
+  width: 90%;
+  background-color: #314157;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+
+.card--work .card--wrap p {
+  text-align: center;
+  margin: 0 0 40% 0;
 }
 /*# sourceMappingURL=style.css.map */
