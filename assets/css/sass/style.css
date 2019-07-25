@@ -19,7 +19,7 @@ header .nav {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 
 header .nav ul {
@@ -64,28 +64,65 @@ body {
   width: 100vw;
   height: 100vh;
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #314157;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  margin-bottom: 300px;
 }
 
 #landing h1 {
+  padding-top: 200px;
   font-family: "Playfair Display", serif;
   font-size: 30px;
 }
 
-#portfolio .card--main {
-  background-color: #314157;
-  width: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#landing p {
+  margin: 0 auto;
+  width: 50%;
 }
 
-#portfolio .card--main p {
+.card--portfolio {
+  background-color: #314157;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  width: 100vw;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-clip-path: polygon(0% 0%, 33% 0%, 44% 33%, 55% 33%, 66% 0%, 100% 0%, 100% 100%, 66% 100%, 55% 66%, 44% 66%, 33% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 33% 0%, 44% 33%, 55% 33%, 66% 0%, 100% 0%, 100% 100%, 66% 100%, 55% 66%, 44% 66%, 33% 100%, 0% 100%);
+  margin-bottom: 100px;
+}
+
+.card--portfolio .card--image {
+  height: 100%;
+  width: 20%;
+}
+
+.card--portfolio .card--image img {
+  padding-top: 20%;
+  padding-left: 33%;
+  height: 80%;
+  width: 100%;
+}
+
+.card--portfolio .card--empty {
+  width: 47%;
+}
+
+.card--portfolio .card--text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+.card--portfolio .card--text p {
+  margin: 0;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=style.css.map */
