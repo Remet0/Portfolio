@@ -1,18 +1,78 @@
-.fadeIn{
-    -webkit-animation: animat_show 1s;
-    animation: animat_show 1s;
-    opacity: 1;
+//clip for Portfolio
+//clip path animation
+.clip--Portfolio_In{
+    animation: clips 1s;
+    animation-fill-mode: forwards;
+
 }
-.fadeOut{
-    -webkit-animation: animat_hide 1s;
-    animation: animat_hide 1s;
-    opacity: 0;
+// clip path fade out
+.clip--Portfolio_Out{
+    animation: clipsout 1s ease;
+    animation-fill-mode: forwards;
 }
-@-webkit-keyframes animat_show{
-    0%{opacity: 0}
-    100%{opacity:1}
+
+@-webkit-keyframes clips{
+    0%{
+        clip-path: polygon(0% 50%, 33% 50%, 44% 50%, 55% 50%, 66% 50%, 100% 50%, 100% 50%, 66% 50%, 55% 50%, 44% 50%, 33% 50%, 0% 50%);
+    }
+    100%{
+        clip-path: polygon(0% 0%, 33% 0%, 44% 33%, 55% 33%, 66% 0%, 100% 0%, 100% 100%, 66% 100%, 55% 66%, 44% 66%, 33% 100%, 0% 100%);
+    }
 }
-@-webkit-keyframes animat_hide{
-    0%{opacity: 1}
-    100%{opacity:0}
+@-webkit-keyframes clipsout{
+    0%{
+        clip-path: polygon(0% 0%, 33% 0%, 44% 33%, 55% 33%, 66% 0%, 100% 0%, 100% 100%, 66% 100%, 55% 66%, 44% 66%, 33% 100%, 0% 100%);
+    }
+    100%{
+        clip-path: polygon(0% 50%, 33% 50%, 44% 50%, 55% 50%, 66% 50%, 100% 50%, 100% 50%, 66% 50%, 55% 50%, 44% 50%, 33% 50%, 0% 50%);
+    }
 }
+//clip for work
+.clip--Work_In{
+    animation: workIn 1s;
+    animation-fill-mode: forwards;
+
+}
+// clip path fade out
+.clip--Work_Out{
+    animation: workOut 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes workIn {
+    0%{
+        clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%)
+    }
+    100%{
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)
+    }
+}
+@-webkit-keyframes workOut {
+    0%{
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)
+    }
+    100%{
+        clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%)
+    }
+}
+
+
+//fade code
+// .fadeIn{
+//     -webkit-animation: animat_show 1s;
+//     animation: animat_show 1s;
+//     opacity: 1;
+// }
+// .fadeOut{
+//     -webkit-animation: animat_hide 1s;
+//     animation: animat_hide 1s;
+//     opacity: 0;
+// }
+// @-webkit-keyframes animat_show{
+//     0%{opacity: 0}
+//     100%{opacity:1}
+// }
+// @-webkit-keyframes animat_hide{
+//     0%{opacity: 1}
+//     100%{opacity:0}
+// }
