@@ -1,5 +1,4 @@
 #landing{
-    width: 100vw;
     height: 100vh;
     text-align: center;
     align-content:  center;
@@ -16,5 +15,10 @@
     p{
         margin: 0 auto;
         width: 50%;
+    }
+}
+li{
+    a{
+        text-decoration: none;
     }
 }

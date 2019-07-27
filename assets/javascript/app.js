@@ -6,7 +6,7 @@ function showImages(el) {
     var topOfWindow = $(window).scrollTop();
     if (el === ".card--portfolio") {
       if (
-        topOfWindow + windowHeight - 550 > thisPos &&
+        topOfWindow + windowHeight - 375 > thisPos &&
         topOfWindow + windowHeight - 900 < thisPos
       ) {
         $(this).addClass("clip--Portfolio_In");
@@ -32,4 +32,14 @@ function showImages(el) {
 $(document).scroll(function() {
   showImages(".card--portfolio");
   showImages(".card--work");
+});
+
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} /* speed */ );
 });
