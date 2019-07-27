@@ -90,6 +90,7 @@
              width: 10%;
          }
          .card--text{
+             font-size: $fs-md;
              width: 50%;
          }
      }
@@ -110,7 +111,11 @@
             .card--image{
                 width: 200px;
                 margin: 0 auto;
+                height: 250px;
                 img{
+                    height: 200px;
+                    width: 150px;
+                    padding-top: 10px;
                     padding-left: 10px;
                 }
             }
@@ -121,6 +126,7 @@
                 margin: 0 auto;
                 width: 90%;
                 p{
+                    font-size: $fs-md;
                     padding: 0px;
                 }
             }
@@ -129,9 +135,14 @@
     @media only screen and (max-width: 400px){
         .card--portfolio{
             .card--image{
-                height: 200px;
+                height: 210px;
                 width: 100px;
                 padding-top: 10px;
+            }
+            .card--text{
+                p{
+                    font-size: $fs-md;
+                }
             }
         }
     }

@@ -153,6 +153,7 @@ header .nav li {
 
 body {
   height: 100vh;
+  font-family: "Lato", sans-serif;
 }
 
 .parallax {
@@ -407,6 +408,7 @@ li a {
     width: 10%;
   }
   .card--portfolio .card--text {
+    font-size: 16px;
     width: 50%;
   }
   .card--work {
@@ -430,8 +432,12 @@ li a {
   .card--portfolio .card--image {
     width: 200px;
     margin: 0 auto;
+    height: 250px;
   }
   .card--portfolio .card--image img {
+    height: 200px;
+    width: 150px;
+    padding-top: 10px;
     padding-left: 10px;
   }
   .card--portfolio .card--empty {
@@ -442,15 +448,19 @@ li a {
     width: 90%;
   }
   .card--portfolio .card--text p {
+    font-size: 16px;
     padding: 0px;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .card--portfolio .card--image {
-    height: 200px;
+    height: 210px;
     width: 100px;
     padding-top: 10px;
+  }
+  .card--portfolio .card--text p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
