@@ -56,6 +56,17 @@
     }
 }
 
+@media only screen and (max-width: 1025px){
+    .clip--Portfolio_In{
+        animation: workIn 1s;
+        animation-fill-mode: forwards;
+    }
+    .clip--Portfolio_Out{
+        animation: workOut 1s ease;
+        animation-fill-mode: forwards;
+    }
+}
+
 
 //fade code
 // .fadeIn{

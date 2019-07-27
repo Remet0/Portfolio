@@ -75,6 +75,21 @@
   }
 }
 
+@media only screen and (max-width: 1025px) {
+  .clip--Portfolio_In {
+    -webkit-animation: workIn 1s;
+            animation: workIn 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .clip--Portfolio_Out {
+    -webkit-animation: workOut 1s ease;
+            animation: workOut 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
 .fix {
   position: -webkit-sticky;
   position: sticky;
@@ -122,6 +137,18 @@ header .nav li {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
+}
+
+@media only screen and (max-width: 620px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav {
+    width: 100%;
+    margin: 0 50px 0 50px;
+  }
 }
 
 body {
@@ -172,6 +199,12 @@ li a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 620px) {
+  #landing p {
+    width: 80%;
+  }
+}
+
 #work {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,11 +217,19 @@ li a {
   margin-bottom: 300px;
 }
 
+@media only screen and (max-width: 620px) {
+  #work {
+    margin-bottom: 800px;
+  }
+}
+
 #contact {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -220,6 +261,37 @@ li a {
 #contact p {
   font-family: "Lato", sans-serif;
   margin: 0;
+}
+
+@media only screen and (max-width: 620px) {
+  #contact .title {
+    top: 20%;
+    left: 33%;
+  }
+  #contact .contact--wrap {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contact .contact--wrap p {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    display: block;
+  }
+  #contact .contact--wrap a {
+    padding-left: 90px;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
 }
 
 .card--portfolio {
@@ -269,7 +341,7 @@ li a {
   display: -ms-flexbox;
   display: flex;
   height: 300px;
-  width: 30%;
+  width: 300px;
   position: relative;
   margin: 7% 10% 0 10%;
 }
@@ -323,5 +395,62 @@ li a {
 
 .card--work:hover .text p {
   width: 80%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .card--portfolio .card--image {
+    padding-top: 50px;
+    height: 300px;
+    width: 200px;
+  }
+  .card--portfolio .card--empty {
+    width: 10%;
+  }
+  .card--portfolio .card--text {
+    width: 50%;
+  }
+  .card--work {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .card--work {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .card--portfolio {
+    height: 100vh;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .card--portfolio .card--image {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .card--portfolio .card--image img {
+    padding-left: 10px;
+  }
+  .card--portfolio .card--empty {
+    display: none;
+  }
+  .card--portfolio .card--text {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .card--portfolio .card--text p {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card--portfolio .card--image {
+    height: 200px;
+    width: 100px;
+    padding-top: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
