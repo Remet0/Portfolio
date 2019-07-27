@@ -216,6 +216,9 @@ li a {
           flex-flow: row wrap;
   height: 100vh;
   margin-bottom: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 620px) {
