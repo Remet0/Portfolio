@@ -1,6 +1,6 @@
 * {
   color: #b895b8;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .clip--Portfolio_In {
@@ -15,70 +15,18 @@
 
 @-webkit-keyframes clips {
   0% {
-    clip-path: polygon(
-      0% 50%,
-      33% 50%,
-      44% 50%,
-      55% 50%,
-      66% 50%,
-      100% 50%,
-      100% 50%,
-      66% 50%,
-      55% 50%,
-      44% 50%,
-      33% 50%,
-      0% 50%
-    );
+    clip-path: polygon(0% 50%, 33% 50%, 44% 50%, 55% 50%, 66% 50%, 100% 50%, 100% 50%, 66% 50%, 55% 50%, 44% 50%, 33% 50%, 0% 50%);
   }
   100% {
-    clip-path: polygon(
-      0% 0%,
-      33% 0%,
-      44% 33%,
-      55% 33%,
-      66% 0%,
-      100% 0%,
-      100% 100%,
-      66% 100%,
-      55% 66%,
-      44% 66%,
-      33% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 0%, 33% 0%, 44% 33%, 55% 33%, 66% 0%, 100% 0%, 100% 100%, 66% 100%, 55% 66%, 44% 66%, 33% 100%, 0% 100%);
   }
 }
 @-webkit-keyframes clipsout {
   0% {
-    clip-path: polygon(
-      0% 0%,
-      33% 0%,
-      44% 33%,
-      55% 33%,
-      66% 0%,
-      100% 0%,
-      100% 100%,
-      66% 100%,
-      55% 66%,
-      44% 66%,
-      33% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 0%, 33% 0%, 44% 33%, 55% 33%, 66% 0%, 100% 0%, 100% 100%, 66% 100%, 55% 66%, 44% 66%, 33% 100%, 0% 100%);
   }
   100% {
-    clip-path: polygon(
-      0% 50%,
-      33% 50%,
-      44% 50%,
-      55% 50%,
-      66% 50%,
-      100% 50%,
-      100% 50%,
-      66% 50%,
-      55% 50%,
-      44% 50%,
-      33% 50%,
-      0% 50%
-    );
+    clip-path: polygon(0% 50%, 33% 50%, 44% 50%, 55% 50%, 66% 50%, 100% 50%, 100% 50%, 66% 50%, 55% 50%, 44% 50%, 33% 50%, 0% 50%);
   }
 }
 .clip--Work_In {
@@ -160,12 +108,12 @@ header .nav li {
 }
 body {
   height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .parallax {
   margin: 0;
-  background-image: url('../../../assets/images/Background.jpg');
+  background-image: url("../../../assets/images/Background.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -193,7 +141,7 @@ html {
 }
 #landing h1 {
   padding-top: 200px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
 }
 #landing p {
@@ -238,7 +186,7 @@ li a {
   position: absolute;
   left: 10%;
   top: 30%;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
 }
 #contact .contact--wrap {
@@ -248,7 +196,7 @@ li a {
   margin: 0 auto;
 }
 #contact p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
 }
 
@@ -433,13 +381,24 @@ li a {
 }
 
 .Modal--Wrap {
-  display: block;
+  position: relative;
   margin: 0 auto;
-  width: 100px;
-  height: 70%;
+  margin-top: 5%;
+  width: 70%;
+  height: 85%;
   align-content: center;
   background-color: #314157;
   opacity: 1;
+}
+
+.Modal--Close {
+  position: absolute;
+  width: 5%;
+  top: 10px;
+  right: 0;
+  font-size: 30px;
+  font-style: bold;
+  cursor: pointer;
 }
 
 .hide {
