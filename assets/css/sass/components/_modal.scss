@@ -12,6 +12,7 @@
 .Modal--Wrap {
   position: relative;
   margin: 0 auto;
+  padding-top: 20px;
   margin-top: 5%;
   width: 70%;
   height: 85%;
@@ -19,12 +20,18 @@
   background-color: $card-color;
   opacity: 1;
 }
+.Modal--Image {
+  height: 200px;
+  width: 250px;
+}
 
 .Modal--Close {
   position: absolute;
+  background: none;
+  border: none;
   width: 5%;
   top: 10px;
-  right: 0;
+  right: 5px;
   font-size: 30px;
   font-style: bold;
   cursor: pointer;

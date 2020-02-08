@@ -46,10 +46,19 @@ $("a[href^='#']").click(function(e) {
   );
 });
 
+//Modal control
 $('.Manhattan').click(function() {
   $('#Man').removeClass('hide');
 });
 
-$('.Modal').click(function() {
-  $('.Modal').addClass('hide');
+$('.Decked--Out').click(function() {
+  $('#Decked').removeClass('hide');
+});
+
+$(document).click(function(e) {
+  if (
+    !$(event.target).closest('.Modal--Wrap, .Manhattan, .Decked--Out').length
+  ) {
+    $('.Modal').addClass('hide');
+  }
 });
