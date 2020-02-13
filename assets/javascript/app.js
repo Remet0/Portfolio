@@ -62,3 +62,8 @@ $(document).click(function(e) {
     $('.Modal').addClass('hide');
   }
 });
+
+$('.Modal--Close').click(function(e) {
+  e.preventDefault;
+  $('.Modal').addClass('hide');
+});
