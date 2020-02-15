@@ -55,9 +55,15 @@ $('.Decked--Out').click(function() {
   $('#Decked').removeClass('hide');
 });
 
+$('.TacoBoutIt').click(function() {
+  $('#Taco').removeClass('hide');
+});
+
 $(document).click(function(e) {
   if (
-    !$(event.target).closest('.Modal--Wrap, .Manhattan, .Decked--Out').length
+    !$(event.target).closest(
+      '.Modal--Wrap, .Manhattan, .Decked--Out, .TacoBoutIt'
+    ).length
   ) {
     $('.Modal').addClass('hide');
   }

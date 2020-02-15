@@ -24,16 +24,22 @@
   background-color: $card-color;
   opacity: 1;
   .content {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 30px 0px 30px;
     width: 100%;
     flex-wrap: wrap;
     justify-items: flex-start;
+  }
+  p {
+    text-indent: 30px;
+    margin: 0;
   }
 }
 
 .Modal--Image {
   height: 200px;
   width: 250px;
+  float: left;
+  margin-right: 20px;
 }
 
 .Modal--Close {
