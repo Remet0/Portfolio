@@ -134,11 +134,17 @@
 
             <h1 class="Modal--Title">Decked Out</h1>
 
-            <img class='Modal--Image' src="./assets/images/Decked-Out.jpg" alt="Deck-Out app image" /> <br><br>
+            <img class='Modal--Image' src="./assets/images/Decked-Out.jpg" alt="Deck-Out app image" />
 
-            <a href="https://deckedout.herokuapp.com/">Visit the Site! </a>
+            <a href="https://deckedout.herokuapp.com/">Visit the Site! </a><br><br>
 
-            <p>Do you want a life tracker to use in your MTG games? How about an orcale search to find out what your opponents cards do? Decked Out is your one stop shop for all your magic needs! Search for cards, build a deck, play the game now on Decked Out.</p> <br>
+            <p class="indent">
+              Once you visit the website you will be greeted with our easy to use game manager. Here you can add players, track life totals, Perform coin tosses or roll dice. You will also be able to visit our orcale search view the link at the button right of the page. All cards were provided by the Scryfall API. Here you can look up or filter through cards you would like to know about. You can click on card to expan them and get a more detialed look. These are all features avaible without making an account.
+            </p><br>
+
+            <p class="indent">
+              If you would like to make and account you can hit the log in button on any page of the site. This will prompt you to either login or create an account. If you fail to login you will be prompted to try again. After a few attempts we provide access to reset your password. When you make your account you will set a username, password, and a secret question. The secret question will be used incase you forget your password. With an account made you can now create decks. Go to your account page through the middle option at the bottom of the screen. Here you can add a deck or edit existing decks. Once you have a deck you can search for cards in a similar fashion to the oracle search. However, this time you can click on cards to set them up to be added. If a card is in the added section you can click it again to add it to your side board or click it two times to remove it from your selection. Now select all the cards you want and then add them to your deck,it's as simpl as that!
+            </p> <br>
             <p>Technologies: React, Express, Node, Amazon S3, MySQL, HTML, CSS, SuperTest, Jest</p> <br>
 
             <p><a href="https://github.com/Remet0/decked-out">GitHub repository</a></p>
@@ -180,23 +186,37 @@
           </div>
         </div>
 
-
-
-
-
-
-
-      <div class="card--work">
-          <a target="_blank" rel="noopener noreferrer" href="https://remet0.github.io/TriviaGame">
+<!-- Card -->
+      <div class="card--work SmashBro">
         <img src="./assets/images/Trivia.jpg" alt="Trivia game image" />
         <div class="card--wrap">
           <p>Smash Bro's Trivia!</p>
         </div>
-        <div class = 'text'>
-            <p>You think you know about Super Smash Bro's? Take this quick quiz to find out how much you actually know. Better think quick because each question is timed.</p> 
-        </div>
-        </a>
       </div>
+<!-- Modal -->
+      <div id = 'Smash' class = "Modal hide">
+          <div class="Modal--Wrap">
+            <button class="Modal--Close">
+              X
+            </button>
+  
+            <div class="content">
+                <h1 class="Modal--Title">Smash Bro's Trivia</h1>
+  
+                <img class="Modal--Image" src="./assets/images/Trivia.jpg" alt="Trivia game image" />
+  
+              <a href="https://remet0.github.io/TriviaGame">Visit the Site! </a> <br><br>
+  
+              <p class="indent"> You will be prompted to click start. Once started the interval timer starts. You will get 20 seconds to answer. Each question will be multpile choice, giving you 4 options, only one is correct. After you answer each questiong you will be shown the correct answer, including follow up information about the question. Once all six questions have been answered you will be shown your stats.</p>  <br>
+
+              <p>Technologies: HTML, CSS, Javascript, JQuery</p> <br>
+  
+              <p><a href="https://github.com/Remet0/TriviaGame">GitHub repository</a></p>
+            </div>
+  
+  
+          </div>
+        </div>
 
     </section>
 

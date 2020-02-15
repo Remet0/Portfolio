@@ -59,10 +59,14 @@ $('.TacoBoutIt').click(function() {
   $('#Taco').removeClass('hide');
 });
 
+$('.SmashBro').click(function() {
+  $('#Smash').removeClass('hide');
+});
+
 $(document).click(function(e) {
   if (
     !$(event.target).closest(
-      '.Modal--Wrap, .Manhattan, .Decked--Out, .TacoBoutIt'
+      '.Modal--Wrap, .Manhattan, .Decked--Out, .TacoBoutIt, .SmashBro'
     ).length
   ) {
     $('.Modal').addClass('hide');
