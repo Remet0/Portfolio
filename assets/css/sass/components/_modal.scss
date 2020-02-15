@@ -29,8 +29,8 @@
     flex-wrap: wrap;
     justify-items: flex-start;
   }
-  p {
-    text-indent: 30px;
+  .indent {
+    text-indent: 20px;
     margin: 0;
   }
 }
@@ -57,4 +57,38 @@
   text-decoration: underline;
   margin-top: 0;
   width: 50%;
+}
+
+@media only screen and (max-width: 1040px) {
+  .Modal--Wrap {
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .Modal--Wrap {
+    p {
+      font-size: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .Modal--Wrap {
+    p {
+      font-size: 8px;
+    }
+  }
+  .Modal--Image {
+    height: 80px;
+    width: 100px;
+  }
+  .Modal--Title {
+    width: 100%;
+  }
+  .Modal--Close {
+    right: 40px;
+  }
 }
