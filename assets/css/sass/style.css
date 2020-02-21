@@ -390,9 +390,9 @@ li a {
   box-shadow: inset 0 0 10px #000000;
   margin: 0 auto;
   padding-top: 40px;
-  margin-top: 5%;
+  margin-top: 50px;
   width: 70%;
-  height: 85%;
+  height: 78%;
   background-color: #314157;
   opacity: 1;
 }
@@ -401,6 +401,7 @@ li a {
   width: 100%;
   flex-wrap: wrap;
   justify-items: flex-start;
+  font-size: 10px;
 }
 .Modal--Wrap .indent {
   text-indent: 20px;
@@ -432,17 +433,12 @@ li a {
   width: 50%;
 }
 
-@media only screen and (max-width: 1040px) {
-  .Modal--Wrap p {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 900px) {
   .Modal--Wrap p {
     font-size: 8px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 670px) {
   .Modal--Wrap p {
     font-size: 8px;
   }
@@ -458,6 +454,11 @@ li a {
 
   .Modal--Close {
     right: 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Modal--Wrap p {
+    font-size: 7px;
   }
 }
 .hide {
